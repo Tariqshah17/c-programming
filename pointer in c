@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int x=5;
+    int *y=&x;
+   printf("%d",x); //prints what is present in x
+   
+  printf("%u",&x); //prints the address of x (%u is unsigned integer that means it is always positive coz address can't be nagative)
+  
+    printf("%u",y);  //prints the assigned value of y that is value of &x so &x and y are same
+    
+    printf("%d",*y); // prints the value which is assigned inside the *y that is value of x =5
+    
+    printf("%u",&y); //prints the address of the pointer & is used to printer the address of the variable
+   
+    printf("Hello world");
+
+    return 0;
+}

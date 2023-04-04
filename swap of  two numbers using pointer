@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int a,b;  // local variables to main function
+    a=3;
+    b=4;
+    printf("%d \n",a); // prints value of a
+    printf("%d \n",b); //prints value of b
+    swap(&a,&b);  //  called function with actual parameters (& passes address to the invoke function)
+
+}
+    void swap(int *x,int *y) // calling function (*x,*y pointers which invokes the address of the called function)
+    {
+    int temp;
+    temp=*x;
+    *x=*y;
+    *y=temp;
+    printf("%d \n",*x );
+    printf("%d",*y);
+    }
